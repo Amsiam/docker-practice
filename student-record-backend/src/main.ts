@@ -6,7 +6,7 @@ async function bootstrap() {
     logger: ['log', 'error', 'warn'],
   }
   );
-  app.enableCors({ exposedHeaders: ['Content-Disposition'] });
+  app.enableCors();
   await app.listen(3000);
   console.log(`API server is running at 3000 🚀 on DEV`);
 }
